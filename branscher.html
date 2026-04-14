@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/images/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Branscher - Skaldus</title>
+  <meta name="description" content="Skaldus anpassat för Tennisklubbar och skolor." />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="/" class="nav-logo">
+        <img src="/images/logo.png" alt="Skaldus symbol" width="24" height="24" style="border-radius: 50%; opacity: 0.9;" />
+        Skaldus
+      </a>
+      <div class="nav-links">
+        <a href="/produkt.html">Funktioner</a>
+        <a href="/branscher.html" style="color: var(--color-text-primary);">Branscher</a>
+        <a href="/pris.html">Pris</a>
+        <a href="/kontakt.html">Kontakt</a>
+        <a href="#" class="btn btn-secondary" data-action="open-club-modal">Logga in</a>
+      </div>
+      <button class="mobile-menu-btn" style="display:none;" aria-label="Meny">☰</button>
+    </div>
+  </nav>
+
+  <!-- Title Section -->
+  <section class="section" style="padding-top: 4rem; padding-bottom: 2rem;">
+    <div class="container">
+      <h1 class="mb-4">Skapad för er verklighet.</h1>
+      <p style="max-width: 60ch;">Skaldus flexibla grundstruktur gör det enkelt att hantera specifika behov. Vi fokuserar just nu på utvalda vertikaler för att garantera högsta kvalitet.</p>
+    </div>
+  </section>
+
+  <!-- Industry Cards -->
+  <section class="section" style="background-color: var(--color-surface); border-top: 1px solid var(--color-border);">
+    <div class="container">
+      <div class="grid grid-2">
+        <div class="card" style="border-top: 4px solid var(--color-accent);">
+          <h2 class="mb-2">Skaldus Tennis</h2>
+          <p>
+            Vår första lanserade modul. Byggd tillsammans med Sveriges ledande tennisklubbar för att hantera tränarlegitimationer, extratimmar, och komplexa föreningsstrukturer.
+          </p>
+          <ul style="list-style-type: none; margin-top: 1.5rem; color: var(--color-text-secondary);">
+            <li class="mb-1">✓ Dedikerad vy för tennistränare</li>
+            <li class="mb-1">✓ Enkel budget-synk mot klubbadministration</li>
+            <li class="mb-1">✓ Över 20 verifierade klubbar online.</li>
+          </ul>
+        </div>
+        <div class="card" style="opacity: 0.7;">
+          <h2 class="mb-2">Skolor & Utbildning <span style="font-size: 0.8rem; background: var(--color-bg); padding: 0.2rem 0.6rem; border-radius: var(--radius-sm); color: var(--color-text-primary); vertical-align: middle; margin-left: 0.5rem;">Kommer Q4</span></h2>
+          <p>
+            Vi utvecklar just nu en skolanpassad modul för hantering av lärartimmar och assistentpass. Vårt mål är att erbjuda samma trygghet för friskolor som vi idag gör för idrottsföreningar.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3 style="font-size: 1.25rem;">Skaldus</h3>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+          <h4 style="font-size: 1rem;">Länkar</h4>
+          <a href="/produkt.html" style="color: var(--color-text-secondary); text-decoration: none;">Funktioner</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Skaldus AB. Alla rättigheter reserverade.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>

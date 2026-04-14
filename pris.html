@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/images/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pris - Skaldus</title>
+  <meta name="description" content="Tydliga prismodeller utan dolda avgifter för Skaldus plattform." />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="/" class="nav-logo">
+         <img src="/images/logo.png" alt="Skaldus symbol" width="24" height="24" style="border-radius: 50%; opacity: 0.9;" />
+         Skaldus
+      </a>
+      <div class="nav-links">
+        <a href="/produkt.html">Funktioner</a>
+        <a href="/branscher.html">Branscher</a>
+        <a href="/pris.html" style="color: var(--color-text-primary);">Pris</a>
+        <a href="/kontakt.html">Kontakt</a>
+        <a href="#" class="btn btn-secondary" data-action="open-club-modal">Logga in</a>
+      </div>
+      <button class="mobile-menu-btn" style="display:none;" aria-label="Meny">☰</button>
+    </div>
+  </nav>
+
+  <!-- Title Section -->
+  <section class="section" style="padding-top: 4rem; padding-bottom: 2rem;">
+    <div class="container text-center">
+      <h1 class="mb-4">Enkel prismodell för er förening.</h1>
+      <p style="margin: 0 auto;">Vi tror på ärliga priser utan dolda kostnader. Välj den plan som passar storleken på er organisation bäst.</p>
+    </div>
+  </section>
+
+  <!-- Pricing Grid -->
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-3">
+        <!-- Tier 1 -->
+        <div class="card" style="text-align: center;">
+          <h3 class="mb-2">Mindre Förening</h3>
+          <p style="color: var(--color-text-secondary); margin-bottom: 2rem;">Upp till 20 anställda i systemet.</p>
+          <a href="/kontakt.html" class="btn btn-secondary" style="width: 100%;">Kontakta oss</a>
+        </div>
+        
+        <!-- Tier 2 -->
+        <div class="card" style="text-align: center; border: 2px solid var(--color-accent); position: relative; box-shadow: 0 8px 30px rgba(0,0,0,0.05);">
+          <div style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--color-accent); color: white; padding: 2px 12px; border-radius: var(--radius-sm); font-size: 0.75rem; font-weight: bold;">
+            POPULÄRAST
+          </div>
+          <h3 class="mb-2">Standard Förening</h3>
+          <p style="color: var(--color-text-secondary); margin-bottom: 2rem;">För föreningar med 20+ anställda.</p>
+          <a href="/kontakt.html" class="btn btn-primary" style="width: 100%;">Kontakta oss</a>
+        </div>
+        
+        <!-- Tier 3 -->
+        <div class="card" style="text-align: center;">
+          <h3 class="mb-2">Enterprise / Multi</h3>
+          <p style="color: var(--color-text-secondary); margin-bottom: 2rem;">För grupper om flera anläggningar.</p>
+          <a href="/kontakt.html" class="btn btn-secondary" style="width: 100%;">Boka möte</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3 style="font-size: 1.25rem;">Skaldus</h3>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/images/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt - Skaldus</title>
+  <meta name="description" content="Kontakta oss på Skaldus för en demo och för att diskutera tidsrapportering." />
+  <link rel="stylesheet" href="/style.css" />
+  <style>
+    .form-group { margin-bottom: 1.5rem; }
+    .form-label { display: block; margin-bottom: 0.5rem; font-weight: 500; font-size: 0.875rem; }
+    .form-control { width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: var(--radius-sm); font-family: inherit; font-size: 1rem; }
+    .form-control:focus { outline: none; border-color: var(--color-accent); box-shadow: 0 0 0 2px rgba(13, 92, 92, 0.1); }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="/" class="nav-logo">
+         <img src="/images/logo.png" alt="Skaldus symbol" width="24" height="24" style="border-radius: 50%; opacity: 0.9;" />
+         Skaldus
+      </a>
+      <div class="nav-links">
+        <a href="/produkt.html">Funktioner</a>
+        <a href="/branscher.html">Branscher</a>
+        <a href="/pris.html">Pris</a>
+        <a href="/kontakt.html" style="color: var(--color-text-primary);">Kontakt</a>
+        <a href="#" class="btn btn-secondary" data-action="open-club-modal">Logga in</a>
+      </div>
+      <button class="mobile-menu-btn" style="display:none;" aria-label="Meny">☰</button>
+    </div>
+  </nav>
+
+  <!-- Title Section -->
+  <section class="section" style="padding-top: 4rem; padding-bottom: 2rem;">
+    <div class="container text-center">
+      <h1 class="mb-2">Låt oss prata.</h1>
+      <p style="margin: 0 auto;">Vare sig ni vill boka en demo eller bara förstå om Skaldus passar er förening, är vi här för att hjälpa.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="section">
+    <div class="container" style="max-width: 600px;">
+      <div class="card" style="padding: 3rem;">
+        <form onsubmit="event.preventDefault(); alert('Tack för ditt meddelande. (Detta är en demo av kontaktformuläret)');">
+          <div class="grid grid-2" style="gap: 1.5rem;">
+            <div class="form-group" style="margin-bottom: 0;">
+              <label for="name" class="form-label">Namn</label>
+              <input type="text" id="name" class="form-control" placeholder="Ditt namn" required />
+            </div>
+            <div class="form-group" style="margin-bottom: 0;">
+              <label for="org" class="form-label">Organisation / Klubb</label>
+              <input type="text" id="org" class="form-control" placeholder="Föreningens namn" />
+            </div>
+          </div>
+          
+          <div class="form-group" style="margin-top: 1.5rem;">
+            <label for="email" class="form-label">E-postadress</label>
+            <input type="email" id="email" class="form-control" placeholder="namn@exempel.se" required />
+          </div>
+          
+          <div class="form-group">
+            <label for="message" class="form-label">Meddelande</label>
+            <textarea id="message" class="form-control" rows="5" placeholder="Berätta kort om era behov..."></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Skicka meddelande</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3 style="font-size: 1.25rem;">Skaldus</h3>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
